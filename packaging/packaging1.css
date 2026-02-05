@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #001AFF;
+}
+
+nav {
+    padding: 40px;
+    background-color: #001AFF;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+nav li {
+    display: inline;
+    padding: 0 4%;
+}
+nav a {
+    font-size: calc(4px + 1.5vw);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #001AFF;
+}
+
+h1 {
+    text-align: center;
+    font-size: calc(50px + 4vw);
+    margin: 0 0 9% 0;
+    font-family: helvetica, roboto, sans-serif;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    font-size: calc(5px + 1.5vw);
+    margin: 15% 0 0 0;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+    color: white;
+    visibility: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main p {
+    font-size: calc(4px + 1.5vw);
+    font-family: helvetica light, roboto light, sans-serif;
+    color: white;
+}
+
+
+#onec {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 33%;
+    margin-bottom: 2vh;
+    padding-left: 10%;
+}
+#twoc {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 33%;
+}
+#threec {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 33%;
+    padding-right: 10%;
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+    padding: 8% 2%;
+    text-align: center;
+}
+
+img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 2%;
+}
+
+#photos {
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: center;
+}
+.photoc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+video {
+    max-width: 400px;
+    width: 33%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 5% 2%;
+}
+
+@media screen and (max-width: 800px) {
+    #photos {
+        flex-direction: column;
+    }
+    img{
+        padding: 5% 10%;
+    }
+    video{
+        width: 100%;
+        padding: 5% 10%;
+    }
+}
