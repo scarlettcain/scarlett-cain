@@ -3,7 +3,7 @@ const horseList = [
     "editorial-src/digitalhorses2.jpg",
     "editorial-src/digitalhorses3.jpg",
     "editorial-src/digitalhorses4.jpg",
-    /* "editorial-src/digitalHorses5.jpg", */
+    "editorial-src/digitalHorses5.jpg",
     "editorial-src/digitalhorses1.jpg"
 ];
 let i = 0;
