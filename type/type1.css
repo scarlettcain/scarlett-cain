@@ -182,7 +182,7 @@ video {
 
 .mobile-mainhead a,
 .mobile-text{
-    display: none;
+    visibility: hidden;
 }
 
 /* =====================================================
@@ -338,6 +338,7 @@ video {
 
     main .mobile-mainhead a{
         display: flex;
+        visibility: visible;
         font-size: calc(14px + 1.5vw);
         padding: 15% 2% 0 2%;
         margin: 0 0 1% 0;
@@ -349,6 +350,7 @@ video {
 
     .mobile-text{
         display: flex;
+        visibility: visible;
     }
 
     #text{
