@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #001AFF;
+}
+
+/* =====================================================
+        NAV
+=========================================================
+*/
+
+nav {
+    padding: 2.5%;
+    background-color: #001AFF;
+    width: 100%;
+    position:fixed;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+nav li {
+    display: inline;
+    padding: 3px .25%;
+    position: relative;
+    white-space: nowrap;
+}
+nav a {
+    font-size: calc(4px + 1.5vw);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+}
+
+nav li:hover {
+    background-color: white;
+}
+nav li:hover a{
+    color: #001AFF;
+
+}
+
+#mobile-nav {
+    display: none;
+}
+
+/* =====================================================
+        NAV dropdown
+=========================================================
+*/
+
+nav li:hover .dropdown {
+    color: white;
+    display: block;
+}
+
+
+nav ul.dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgba(13, 72, 255, .75);
+    text-align: left;
+    display: none;
+}
+nav ul.dropdown li {
+    padding: .1%;
+}
+
+nav a.dropdown {
+    font-size: calc(1.5px + 1.5vw);
+    color: white;
+}
+
+/* =====================================================
+        HEADER
+=========================================================
+*/
+
+h1 {
+    text-align: center;
+    font-size: calc(50px + 4vw);
+    margin: 0 8% 9% 8%;
+    font-family: helvetica, roboto, sans-serif;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    font-size: calc(5px + 1.5vw);
+    margin: 22% 0 0 0;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+    color: white;
+    visibility: hidden;
+}
+
+/* =====================================================
+        MAIN
+=========================================================
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main p {
+    padding: 1% 1% 4% 1%;
+    font-size: calc(2px + 1vw);
+    font-family: helvetica light, roboto light, sans-serif;
+    color: white;
+    line-height: 1.2;
+
+}
+
+main a {
+    color: white;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 1% 0 1%;
+}
+
+#photos {
+    display: flex;
+    flex-direction: row;
+    padding: 5% 9% 5% 9%;
+    justify-content: center;
+
+}
+.photoc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1%;
+    flex: 1;
+}
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    /* =====================================================
+        NAV
+=========================================================
+*/
+    nav li:hover,
+    nav li:hover a {
+        background-color: inherit;
+        color: inherit;
+    }
+    nav {
+        padding: 5% 10%;
+    }
+
+    #hamburger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        text-align: center;
+        font-size: calc(20px + 1.5vw);
+        justify-content: center;
+        background-color: #001AFF;
+        color: white;
+        border: none;
+
+    }
+
+    nav p{
+        padding-top: .5vh;
+    }
+
+    nav p,
+    header p,
+    main p{
+        font-size: calc(10px + 1.5vw);
+        font-family: helvetica light, roboto light, sans-serif;
+        color: white;
+    }
+
+    nav a,
+    nav a.dropdown{
+        font-size: calc(10px + 1.5vw);
+        font-family: helvetica light, roboto light, sans-serif;
+        color: white;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topnav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul .dropdown,
+    nav ul:hover .dropdown{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        background-color: #001AFF;
+        padding-left: 3%;
+    }
+
+    nav li:hover,
+    nav li{
+        background-color: #001AFF;
+        padding: 3% 1% 1% 1%;
+
+    }
+
+    nav li:hover a,
+    nav li a{
+        color: white;
+        font-size: calc(10px + 1.5vw);
+        padding: 3% 1% 1% 1%;
+
+    }
+
+
+    nav li:hover .dropdown {
+        display: flex;
+    }
+
+    .topnav.active{
+        display: flex;
+    }
+
+    #mobile-tag {
+        margin-left: auto;
+    }
+
+    /* =====================================================
+        MAIN
+=========================================================
+*/
+
+    #photos {
+        flex-direction: column;
+    }
+
+    img {
+        padding: 6% 2% 2% 2%;
+    }
+}
