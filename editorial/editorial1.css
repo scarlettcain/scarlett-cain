@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#page-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #001AFF;
+}
+
+/* =====================================================
+        NAV
+=========================================================
+*/
+
+nav {
+    padding: 2.5%;
+    background-color: #001AFF;
+    width: 100%;
+    position:fixed;
+    z-index: 999;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 0;
+}
+nav li {
+    display: inline;
+    padding: 3px .25%;
+    position: relative;
+    white-space: nowrap;
+}
+nav a {
+    font-size: calc(4px + 1.5vw);
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+}
+
+nav li:hover {
+    background-color: white;
+}
+nav li:hover a{
+    color: #001AFF;
+}
+
+#mobile-nav {
+    display: none;
+}
+
+/* =====================================================
+        NAV dropdown
+=========================================================
+*/
+
+nav li:hover .dropdown {
+    color: white;
+    display: block;
+}
+
+
+nav ul.dropdown {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    background-color: rgba(13, 72, 255, .75);
+    text-align: left;
+    display: none;
+}
+nav ul.dropdown li {
+    padding: .1%;
+}
+
+nav a.dropdown {
+    font-size: calc(1.5px + 1.5vw);
+    color: white;
+}
+
+/* =====================================================
+        HEADER
+=========================================================
+*/
+
+h1 {
+    text-align: center;
+    font-size: calc(50px + 4vw);
+    margin: 0 8% 9% 8%;
+    font-family: helvetica, roboto, sans-serif;
+    color: white;
+}
+
+header p {
+    text-align: center;
+    font-size: calc(5px + 1.5vw);
+    margin: 22% 0 0 0;
+    font-family: helvetica light, roboto light, arial, sans-serif;
+    color: white;
+    visibility: hidden;
+}
+
+/* =====================================================
+        MAIN
+=========================================================
+*/
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+main a {
+    text-align: left;
+    font-size: calc(3px + 1.5vw);
+    font-family: helvetica light, roboto light, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+main .mainhead {
+    text-align: left;
+    font-size: calc(3px + 1.5vw);
+    font-family: helvetica light, roboto light, sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 0 0 2% 0;
+}
+
+
+main p {
+    font-size: calc(1.5px + 1vw);
+    font-family: helvetica light, roboto light, sans-serif;
+    color: white;
+    text-align: left;
+    padding: 0 0 10% 0;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding: 0 2% 5% 2%;
+}
+
+button {
+    background-color: white;
+    color: #001AFF;
+    border: white solid 1px;
+}
+.buttons{
+    margin-bottom: 6vh;
+}
+
+button:hover {
+    background-color: #001AFF;
+    color: white;
+    cursor: pointer;
+    border: white solid 1px;
+}
+
+.photos{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    width: 75%;
+}
+
+#photo-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5% 9.5% 5% 9.5%;
+    margin: 0;
+    justify-content: center;
+
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 25%;
+    padding: 0 2% 0 0;
+    position: sticky;
+    top: 13%;
+    align-self: flex-start;
+}
+
+/* =====================================================
+        MAIN js active unactive
+=========================================================
+*/
+
+
+#heartlandp {
+    display: none;
+}
+
+#heartlandp.active {
+    display: block;
+}
+
+#ripenedp {
+    display: none;
+}
+
+#ripenedp.active {
+    display: block;
+}
+
+#horsesp {
+    display: none;
+}
+
+#horsesp.active {
+    display: block;
+}
+
+#reiterationp {
+    display: none;
+}
+
+#reiterationp.active {
+    display: block;
+}
+
+#whatisp {
+    display: none;
+}
+
+#whatisp.active {
+    display: block;
+}
+
+#hiddenp {
+    display: none;
+}
+
+#hiddenp.active {
+    display: block;
+}
+
+#publicip {
+    display: none;
+}
+
+#publicip.active {
+    display: block;
+}
+
+#glowp {
+    display: none;
+}
+
+#glowp.active {
+    display: block;
+}
+
+/* =====================================================
+        MAIN js scroll
+=========================================================
+*/
+
+
+#heartland {
+    scroll-margin-top: 26vh;
+}
+#ripened {
+    scroll-margin-top: 26vh;
+}
+#horses {
+    scroll-margin-top: 26vh;
+}
+#reiteration {
+    scroll-margin-top: 26vh;
+}
+#hidden {
+    scroll-margin-top: 26vh;
+}
+#publici {
+    scroll-margin-top: 26vh;
+}
+#glow {
+    scroll-margin-top: 26vh;
+}
+
+
+.mobile-text {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    /* =====================================================
+         NAV
+=========================================================
+ */
+    nav li:hover,
+    nav li:hover a {
+        background-color: inherit;
+        color: inherit;
+    }
+    nav {
+        padding: 5% 10%;
+    }
+
+    #hamburger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        text-align: center;
+        font-size: calc(20px + 1.5vw);
+        justify-content: center;
+        background-color: #001AFF;
+        color: white;
+        border: none;
+    }
+
+    nav p{
+        padding-top: .5vh;
+    }
+
+    nav p,
+    header p,
+    main p{
+        font-size: calc(10px + 1.5vw);
+        font-family: helvetica light, roboto light, sans-serif;
+        color: white;
+    }
+
+    nav a,
+    nav a.dropdown{
+        font-size: calc(10px + 1.5vw);
+        font-family: helvetica light, roboto light, sans-serif;
+        color: white;
+    }
+
+    #mobile-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topnav{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul .dropdown,
+    nav ul:hover .dropdown{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+        background-color: #001AFF;
+        padding-left: 3%;
+    }
+
+    nav li:hover,
+    nav li{
+        background-color: #001AFF;
+        padding: 3% 1% 1% 1%;
+
+    }
+
+    nav li:hover a,
+    nav li a{
+        color: white;
+        font-size: calc(10px + 1.5vw);
+        padding: 3% 1% 1% 1%;
+
+    }
+
+
+    nav li:hover .dropdown {
+        display: flex;
+    }
+
+    .topnav.active{
+        display: flex;
+    }
+
+    #mobile-tag {
+        margin-left: auto;
+    }
+
+    /* =====================================================
+        MAIN
+=========================================================
+*/
+
+    img{
+        padding: 2% 2%;
+    }
+
+    .buttons{
+        font-size: calc(10px + 1.5vw);
+        margin: 0 .5% 6% .5%;
+    }
+
+    button #hamburger{
+        margin-bottom: 0;
+    }
+
+    .mobile-text {
+        display: block;
+        text-align: center;
+
+    }
+
+    #text {
+    display: none;
+    }
+
+    main p {
+        font-size: calc(10px + 1.5vw);
+        padding: 0 0 2% 0;
+    }
+
+    main a{
+        font-size: calc(10px + 3vw);
+        font-weight: bold;
+    }
+
+}
