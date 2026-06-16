@@ -96,7 +96,14 @@ h1 {
     margin: 0 0 20vh 0;
     font-family: helvetica, roboto, sans-serif;
     color: white;
+    font-kerning: normal;
+    font-variant-ligatures: none;
 }
+
+h1 span {
+    letter-spacing: .03em;
+}
+
 
 header p {
     text-align: center;
