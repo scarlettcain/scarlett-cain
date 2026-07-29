@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "socialmedia.css">
+    <title>Social Media - Scarlett Cain</title>
+    <!--    <meta-->
+    <!--            name = "editorial design page"-->
+    <!--            content = "Scarlett Cain's portfolio" >-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="page-wrapper">
+    <nav>
+        <div id = "mobile-nav">
+            <button id = "hamburger">☰</button>
+            <p id = "mobile-tag" >scarlett cain - design / fine arts portfolio</p>
+        </div>
+
+        <ul class = "topnav">
+            <li><a href = "../home.html">[ home ]</a></li>
+            <li><a href = "../gd/graphicdesign.html">[ graphic design ] </a>
+                <ul class = "dropdown">
+                    <li><a class = "dropdown" href = "../branding/branding.html">branding</a></li>
+                    <li><a class = "dropdown" href = "../editorial/editorial.html">editorial design</a></li>
+                    <li><a class = "dropdown" href = "../packaging/packaging.html">packaging design</a></li>
+                    <li><a class = "dropdown" href = "../type/type.html">typography</a></li>
+                    <li><a class = "dropdown" href = "../socialmedia/socialmedia.html">social media</a></li>
+                </ul>
+            </li>
+            <li><a href = "../finearts/finearts.html">[ fine arts ]</a></li>
+            <li><a href = "../about/about.html">[ about ]</a></li>
+        </ul>
+    </nav>
+    <header>
+        <p>hi</p>
+        <h1>social media</h1>
+    </header>
+    <main>
+        <div class = "main-wrapper">
+            <div id = text>
+                <p class = "mainhead"><a href = "#select-wrapper">[ select generation ]</a></p>
+                <p id="selectp">Spring - Summer 2026 <br> <br>
+                    Posts made in a minimalistic editorial football style.</p>
+            </div>
+            <div id="photos">
+                <p class = "mobile-mainhead"><a href = "#select-wrapper">[ select generation ]</a></p>
+                <p class="mobile-text">Spring - Summer 2026 <br> <br>
+                    Rebrand of NC fast food chain Cook OUt. Focus on rebranding
+                    current packaging of the restaurant and creating Cook Out branded
+                    kitchenware for home.</p>
+                <div class = "column">
+                    <img id = "parentsimg" src = " " alt = "parents image">
+                    <div class="buttons">
+                        <button onclick="parents.prev()">&lt;</button>
+                        <button onclick=" parents.next()">></button>
+                    </div>
+
+                    <img id = "harderimg" src = " " alt = "harder image">
+                    <div class="buttons">
+                        <button onclick="harder.prev()">&lt;</button>
+                        <button onclick=" harder.next()">></button>
+                    </div>
+
+                    <img id = "emailimg" src = " " alt = "email image">
+                    <div class="buttons">
+                        <button onclick="email.prev()">&lt;</button>
+                        <button onclick=" email.next()">></button>
+                    </div>
+                </div>
+                <div class = "column">
+                    <img id = "swedenimg" src = " " alt = "sweden image">
+                    <div class="buttons">
+                        <button onclick="sweden.prev()">&lt;</button>
+                        <button onclick=" sweden.next()">></button>
+                    </div>
+
+                    <img id = "europeimg" src = " " alt = "europe image">
+                    <div class="buttons">
+                        <button onclick="europe.prev()">&lt;</button>
+                        <button onclick=" europe.next()">></button>
+                    </div>
+
+                    <img id = "fifamlsimg" src = " " alt = "fifa-mls img image">
+                    <div class="buttons">
+                        <button onclick="fifaMls.prev()">&lt;</button>
+                        <button onclick=" fifaMls.next()">></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="socialmedia.js"></script>
+
+</div>
+</body>
+</html>
